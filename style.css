@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0;
+}
+
+h3 {
+    font-family: 'Playfair Display';
+    font-size: 4rem;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display';
+    font-size: 3rem;
+}
+
+.nav-link {
+    margin-left: 2rem;
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+}
+
+p, .btn, input, .card-title {
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+   
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    margin-bottom: 4rem;
+}
+
+header, .about, .catalog, .CTA, .blog {
+    margin-bottom: 8rem;
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+header, .about, .catalog, .blog, .CTA {
+    margin-bottom: 8em;
+}
+
+.card-img-top {
+    border-radius: 0px;
+}
+
+.card {
+    border: 0px;
+}
+
+.card-body {
+    padding: 1rem 0;
+}
+
+.catalog-header {
+    margin-bottom: 4rem;
+}
+
+.CTA {
+    background-image: url('../images/form_bg.png');
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.Contacts {
+    background-image: url(./HomePlants/images/contact_img.png);
+width: 100%;
+height: 40em;
+background-size: cover;
+background-position: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -----FAQ----- */
+
+#FAQ .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+#FAQ * {
+    margin: 0;
+    padding: 0;
+}
+
+#FAQ .section {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#FAQ h2, h3, p {
+    color: rgb(53, 53, 53);
+}
+
+#FAQ h2 {
+    font-family: 'Playfair Display';
+    font-weight: 100;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#FAQ h3 {
+    font-family: 'Roboto Mono';
+    font-size: 3rem;
+}
+
+#FAQ p {
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.faq {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in;
+}
+
+.faq.active .answer {
+    /* max-height: max-content; */
+    max-height: 300px;
+animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: (0px);
+    }
+}
